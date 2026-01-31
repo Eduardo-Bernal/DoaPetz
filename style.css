@@ -1,5 +1,146 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= SEGUNDA SEÇÃO ================= */
+
+.segunda-secao{
+    display: flex;                 /* Flexbox */
+    flex-direction: row;           /* Linha */
+    justify-content: space-around; /* Espaço igual */
+    align-items: center;           /* Centraliza verticalmente */
+    width: 100%;                   /* Largura total */
+    background-color: #ec768640;   /* Fundo com transparência */
+    height: 500px;                 /* Altura fixa */
+}
+
+/* Cards de categorias */
+.cachorros, 
+.gatos, 
+.hamsters{
+    display: flex;                 /* Flexbox */
+    flex-direction: column;        /* Em coluna */
+    align-items: center;           /* Centraliza */
+    gap: 10px;                     /* Espaço entre imagem e botão */
+}
+
+/* Botões das categorias */
+.botao_cachorro, 
+.botao_gato, 
+.botao_hamster {
+    font-size: 19px;               /* Tamanho do texto */
+    font-family: 'Mochiy Pop One', sans-serif; /* Fonte */
+    width: 280px;                  /* Largura fixa */
+    padding: 15px 0;               /* Espaçamento interno */
+    background-color: #ff950d;     /* Cor de fundo */
+    color: #f5f5f5;                /* Cor do texto */
+    border-radius: 10px;           /* Bordas arredondadas */
+    border: 1px solid #f5f5f5;     /* Borda */
+    cursor: pointer;               /* Cursor de clique */
+
+    display: flex;                 /* Flexbox */
+    justify-content: center;       /* Centraliza horizontalmente */
+    align-items: center;           /* Centraliza verticalmente */
+    text-decoration: none;         /* Remove sublinhado dos links */
+
+    transition: transform 0.2s, background-color 0.2s; /* Animação */
+}
+
+/* Hover dos botões */
+.botao_cachorro:hover, 
+.botao_gato:hover, 
+.botao_hamster:hover {
+    background-color: #e68600;     /* Escurece a cor */
+    transform: scale(1.05);        /* Aumenta levemente */
+}
+
+
+/* ================= TERCEIRA SEÇÃO ================= */
+
+/* Seção que contém os depoimentos */
+.terceira-secao{
+    display: flex;                 /* Ativa o Flexbox */
+    flex-direction: column;        /* Organiza os elementos em coluna */
+    justify-content: space-evenly; /* Distribui o espaço verticalmente de forma igual */
+    align-items: center;           /* Centraliza os itens horizontalmente */
+    width: 100%;                   /* Ocupa toda a largura da tela */
+    height: 400px;                 /* Altura fixa da seção */
+}
+
+/* Estilo do título h2 (Depoimentos) */
+h2{
+    font-family:'Mochiy Pop One', sans-serif; /* Fonte personalizada */
+    font-size: 2.5em;             /* Tamanho da fonte relativo ao padrão */
+}
+
+/* Container que agrupa os cards de depoimentos */
+.conteudos{
+    display: flex;                /* Coloca os depoimentos lado a lado */
+    gap: 200px;                   /* Espaço grande entre os cards */
+}
+
+/* Card individual de depoimento */
+.depoimentos{
+    display: flex;                /* Organiza imagem e texto lado a lado */
+    width: 25vw;                  /* Largura proporcional à tela */
+    height: 200px;                /* Altura fixa do card */
+    background-color: #c3c2c7;    /* Fundo cinza claro */
+    border-radius: 8px;           /* Cantos arredondados */
+}
+
+/* Área do texto dentro do card */
+.depoimento{
+    display: flex;                /* Flexbox para alinhar texto */
+    flex-direction: column;       /* Texto em coluna */
+    align-items: center;          /* Centraliza horizontalmente */
+    justify-content: center;      /* Centraliza verticalmente */
+    width: 10vw;                  /* Largura limitada do texto */
+    margin-left: 20px;            /* Espaço entre imagem e texto */
+}
+
+/* ================= RODAPÉ ================= */
+
+/* Estilo geral do rodapé */
+.rodape{
+    background-color: #ff8800;    /* Cor de fundo laranja */
+}
+
+/* Conteúdo interno do rodapé */
+.conteudo-rodape{
+    display: flex;                /* Flexbox */
+    justify-content: space-between; /* Espaça os blocos */
+    align-items: center;          /* Centraliza verticalmente */
+    width: 85%;                   /* Largura do conteúdo */
+    margin: 0 auto;               /* Centraliza o rodapé na página */
+    padding: 12px;                /* Espaçamento interno */
+    font-weight: 500;             /* Peso médio da fonte */
+}
+
+/* Lista de informações do rodapé */
+.lista ul{
+    font-family:'Mochiy Pop One', sans-serif; /* Fonte personalizada */
+    font-size: 1.2em;             /* Tamanho da fonte */
+}
+
+/* Área das redes sociais */
+.redes-sociais{
+    display: flex;                /* Flexbox */
+    flex-direction: column;       /* Organiza em coluna */
+    align-items: center;          /* Centraliza horizontalmente */
+    gap: 0 8px;                   /* (Linha inválida, sobrescrita abaixo) */
+    font-size: 20px;              /* Tamanho do texto */
+    font-weight: 500;             /* Peso médio */
+    color: #f5f5f5 !important;    /* Força a cor branca */
+    gap: 10px;                    /* Espaçamento entre elementos */
+}
+
+/* Texto de direitos autorais */
+.copyright{
+    padding-bottom: 16px;         /* Espaço abaixo do texto */
+    text-align: center;           /* Centraliza o texto */
+    color: #f5f5f5;               /* Cor branca */
+}
+
+/* ================= RESPONSIVIDADE MOBILE ================= */
+
+/* Esconde o checkbox do menu hambúrguer */
+#menu-check {
+
+    display: none;                /* Checkbox invisível */
 }
